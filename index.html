@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bases Numericas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+     
+    <title>Arquitectura</title>
 </head>
 <body>
-    h
+    <h1>Conversión de bases</h1>
+    <div class="select-menu">
+        <div class="select-btn">
+            <span class="sBtn-text">Selecciona que quieres hacer</span>
+            <i class="bx bx-chevron-down"></i>
+        </div>
+        <ul class="options">
+            <li class="option">
+                <span class="option-text">Decimal a Binario</span>
+            </li>
+            <li class="option">
+                <span class="option-text">Binario a Decimal</span>
+            </li>
+            <li class="option">
+                <span class="option-text">Decimal a Octal</span>
+            </li>
+            <li class="option">
+                <span class="option-text">Octal a Decimal</span>
+            </li>
+            <li class="option">
+                <span class="option-text">Decimal a Hexadecimal</span>
+            </li>
+            <li class="option">
+                <span class="option-text">Hexadecimal a Decimal</span>
+            </li>
+            <li class="option">
+                <span class="option-text">Binario a Octal</span>
+            </li>
+            <li class="option">
+                <span class="option-text">Octal a Binario</span>
+            </li>
+            <li class="option">
+                <span class="option-text">Binario a Hexadecimal</span>
+            </li>
+            <li class="option">
+                <span class="option-text">Hexadecimal a Binario</span>
+            </li>
+        </ul>
+    </div>
+    <div class="input">
+        <input type="number" id="inputNumber">
+        <button id="addInputButton" class="add-button"><i class='bx bx-plus'></i></button>
+    </div>
+    <ul id="valuesList"></ul>
+
+    <h1 id="output"></h1>
+    <div class="numbers-container">
+        <span id="numbersList"></span>
+    </div>
+    <script src="basesNumericas.js"></script>
 </body>
 </html>
